@@ -1,0 +1,26 @@
+{
+  "appId": "com.healthcare.app",
+  "appName": "Healthcare System",
+  "webDir": "out",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "Camera": {
+      "permissions": {
+        "camera": "This app needs camera access to upload X-ray images",
+        "photos": "This app needs photo library access"
+      }
+    },
+    "Filesystem": {
+      "permissions": {
+        "read": "This app needs file read access",
+        "write": "This app needs file write access"
+      }
+    }
+  }
+}
+
+
+
+

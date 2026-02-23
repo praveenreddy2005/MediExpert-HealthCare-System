@@ -1,0 +1,98 @@
+# =====================================================
+# MediXpert Healthcare System - .gitignore
+# Next.js + FastAPI + Firebase Project
+# =====================================================
+
+# ---------------------------
+# Node.js / Next.js
+# ---------------------------
+node_modules/
+.next/
+out/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------
+# Environment Variables (Secrets)
+# ---------------------------
+.env
+.env.local
+.env.*.local
+frontend/.env.local
+backend/.env
+
+# Firebase keys
+**/serviceAccountKey*.json
+
+# ---------------------------
+# Python / FastAPI
+# ---------------------------
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+venv/
+.venv/
+env/
+ENV/
+
+# ---------------------------
+# AI Models / Data (Large Files)
+# ---------------------------
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+chest_xray/
+model_checkpoints/
+
+# ---------------------------
+# Logs
+# ---------------------------
+*.log
+logs/
+
+# ---------------------------
+# Coverage / Cache
+# ---------------------------
+coverage/
+.nyc_output/
+.cache/
+pytest_cache/
+
+# ---------------------------
+# IDE / Editor
+# ---------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------------
+# OS Files
+# ---------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------
+# Temporary files
+# ---------------------------
+tmp/
+temp/
+*.tmp
+
+# --- Do not push large datasets / model weights ---
+backend/ecg_image_data/
+backend/test_samples/
+backend/*.pth
+backend/*.pt
+backend/*.h5
+backend/*.keras
